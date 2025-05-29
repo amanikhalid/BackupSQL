@@ -70,3 +70,21 @@
  - Regular upkeep is necessary.
 
  **A ticketing system that records each booking and transaction almost instantly is an example of a real-world scenario.**
+
+ **4.Copy-Only Backup** 
+ 
+ Ad hoc backups that don't interfere with the backup sequence are known as copy-only backups.
+
+ It contains the entire database or transaction log, just like a complete backup, but it doesn't affect the differential base.
+
+ **Pros:**
+
+ - has no effect on the backup chain.
+
+ - secure for backups whenever needed.
+
+ **Cons:**
+
+ - Not suitable as a foundation for log or differential backups.
+
+ **Real-World Scenario: Make a backup before implementing a significant update to the hospital management system.**
