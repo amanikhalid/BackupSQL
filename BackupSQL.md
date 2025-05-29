@@ -88,3 +88,23 @@
  - Not suitable as a foundation for log or differential backups.
 
  **Real-World Scenario: Make a backup before implementing a significant update to the hospital management system.**
+
+ **5.File/Filegroup Backup**
+ 
+ Use of File/Filegroup Backup: Big databases with several filegroups.
+
+ It contains certain files or filegroups.
+
+ **Pros:**
+
+ - permits partial restores and backups.
+
+ - beneficial for VLDBs.
+
+ **Cons:**
+
+ - difficult to handle.
+
+ - calls for thorough recovery procedures.
+
+ **A university database with distinct filegroups for departments and faculties is an example of a real-world scenario.**
