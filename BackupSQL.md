@@ -29,7 +29,8 @@
 
  - time-consuming.
 
- - Real-World Scenario: To protect all customer transaction data, a banking system performs a complete backup every Sunday night.
+ **Real-World Scenario: To protect all customer transaction data, a banking system performs a complete backup every Sunday night.**
+
 
  **2.Differential Backup:**
 
@@ -47,4 +48,25 @@
 
  - needs the most recent complete backup in order to recover.
 
- - Real-World Scenario: Following the first weekly complete backup, an e-learning platform backs up student progress and course content updates every night.
+ **Real-World Scenario: Following the first weekly complete backup, an e-learning platform backs up student progress and course content updates every night.**
+
+
+ **3. Transaction Log Backup**
+
+ When Used: Regular backups in FULL recovery mode (e.g., every 15 to 60 minutes).
+
+ All transaction logs since the last log backup are included.
+
+**Pros:**
+
+ - Point-in-time recovery is made possible.
+
+ - reduces the loss of data.
+
+ **Cons:**
+
+ - If the recovery model is SIMPLE, it cannot be used.
+
+ - Regular upkeep is necessary.
+
+ **A ticketing system that records each booking and transaction almost instantly is an example of a real-world scenario.**
