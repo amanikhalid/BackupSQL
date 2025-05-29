@@ -11,7 +11,7 @@
 
  ---------------
 
- **1.Full Backup**
+ **1.Full Backup:**
 
  When Applied:  as a basic backup; usually planned on a daily or weekly basis.
 
@@ -31,3 +31,20 @@
 
  - Real-World Scenario: To protect all customer transaction data, a banking system performs a complete backup every Sunday night.
 
+ **2.Differential Backup:**
+
+ Used Every day in between complete backups.
+
+ Changes since the last complete backup are among its contents.
+
+  **Pros:**
+
+ - quicker and smaller than complete backups.
+
+ - effective storage utilization.
+
+ **Cons:**
+
+ - needs the most recent complete backup in order to recover.
+
+ - Real-World Scenario: Following the first weekly complete backup, an e-learning platform backs up student progress and course content updates every night.
