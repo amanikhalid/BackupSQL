@@ -132,4 +132,10 @@ WITH NORECOVERY;
 ```
 ![RestoreTrainingDatabase Output](./image/RestoreTrainingDB.png)
 
+#### 2. Restore DIFFERENTIAL backup (if you created one)
+```sql
+RESTORE DATABASE TrainingDB  
+FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Diff.bak' 
+WITH NORECOVERY; 
+```
 
