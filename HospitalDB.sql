@@ -48,3 +48,11 @@ VALUES
 ('Pediatrics'),
 ('Orthopedics');
 
+-- Insert sample data into Doctors
+INSERT INTO Doctors (FirstName, LastName, DepartmentID)
+VALUES
+('Salim', 'Al-Muqbali', 1),
+('Aisha', 'Al-Harthy', 2),
+('Muna', 'Al-Lawati', 3),
+('Hassan', 'Al-Balushi', 4);
+
