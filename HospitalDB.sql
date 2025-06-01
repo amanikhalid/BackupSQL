@@ -64,3 +64,10 @@ VALUES
 ('Layla', 'Al-Kalbani', '2005-10-17', 'Female'),
 ('Yusuf', 'Al-Nabhani', '1978-02-03', 'Male');
 
+-- Insert sample data into Appointments
+INSERT INTO Appointments (PatientID, DoctorID, AppointmentDate, Reason)
+VALUES
+(1, 1, '2025-06-01 09:00', 'Heart Checkup'),
+(2, 2, '2025-06-01 10:30', 'Frequent Headaches'),
+(3, 3, '2025-06-01 11:00', 'Childhood Immunization'),
+(4, 4, '2025-06-01 12:15', 'Joint Pain');
