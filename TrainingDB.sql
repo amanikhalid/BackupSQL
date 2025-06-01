@@ -70,6 +70,11 @@ RESTORE DATABASE TrainingDB
 FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak' 
 WITH NORECOVERY; 
 
+--2. Restore DIFFERENTIAL backup 
+RESTORE DATABASE TrainingDB  
+FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Diff.bak' 
+WITH NORECOVERY; 
+
 
 
 
