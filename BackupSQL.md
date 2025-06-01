@@ -158,7 +158,7 @@ SELECT * FROM Students;
 
 ### Reflection Questions: 
 #### 1. What would happen if you skipped the differential backup step? 
-Only data up to the complete backup would be recoverable.  Unless reapplied in another way, any changes recorded by the differential backup would be lost.
+Only data up to the full backup would be recoverable.  Unless reapplied in another way, any changes recorded by the differential backup would be lost.
 
 #### 2. What’s the difference between restoring a full vs. copy-only backup? 
 - Differential/log backups are built on top of Full Backup.
@@ -166,11 +166,11 @@ Only data up to the complete backup would be recoverable.  Unless reapplied in a
 - Copy-Only Backup cannot be used as a foundation for differential or log backups and has no effect on the backup chain.
 
 #### 3. What happens if you use WITH RECOVERY in the middle of a restore chain?
-It stops applying additional backups (such as diff or log) and terminates the restoration process. After that, you would have to start over from the complete backup.
+It stops applying additional backups (such as diff or log) and terminates the restoration process. After that, you would have to start over from the full backup.
 
 #### 4. Which backup types are optional and which are mandatory for full recovery?
-- Complete backup and all transaction log backups are required (in FULL recovery model).
+- Mandatory: Full Backup + All Transaction Log Backups (in FULL recovery model)
 
-- Differential backup, which reduces recovery time, is optional.
+- Optional: Differential Backup (used to shorten recovery time)
 
-- Copy-Only: Not required; used for ad hoc backups.
+- Copy-Only: Optional; for ad-hoc backup purposes.
