@@ -30,5 +30,8 @@ INSERT INTO Students VALUES (3, 'Fatma Said', '2024-01-10');
 -- 3. Differential Backup
 BACKUP DATABASE TrainingDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak' WITH DIFFERENTIAL;
 
+-- 4. Transaction Log Backup
+ALTER DATABASE TrainingDB SET RECOVERY FULL;
+
 
 
