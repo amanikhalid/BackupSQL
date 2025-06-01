@@ -19,3 +19,8 @@ INSERT INTO Students VALUES
 (2, 'Mohammed Nasser', '2023-10-15');
 
 
+-- Perform Backup Operations
+
+-- 1. Full Backup
+BACKUP DATABASE TrainingDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak';
+
