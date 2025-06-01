@@ -28,3 +28,16 @@ CREATE TABLE Patients (
     Gender NVARCHAR(10)
 );
 
+-- Create Appointments table
+CREATE TABLE Appointments (
+    AppointmentID INT PRIMARY KEY IDENTITY(1,1),
+    PatientID INT,
+    DoctorID INT,
+    AppointmentDate DATETIME,
+    Reason NVARCHAR(255),
+    FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
+    FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID)
+);
+
+
+
