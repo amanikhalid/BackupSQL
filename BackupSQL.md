@@ -130,6 +130,6 @@ RESTORE DATABASE TrainingDB
 FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak' 
 WITH NORECOVERY; 
 ```
-
+![RestoreTrainingDatabase Output](./image/RestoreTrainingDB.png)
 
 
