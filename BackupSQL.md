@@ -160,3 +160,8 @@ SELECT * FROM Students;
 #### 1. What would happen if you skipped the differential backup step? 
 Only data up to the complete backup would be recoverable.  Unless reapplied in another way, any changes recorded by the differential backup would be lost.
 
+#### 2. What’s the difference between restoring a full vs. copy-only backup? 
+- Differential/log backups are built on top of Full Backup.
+
+- Copy-Only Backup cannot be used as a foundation for differential or log backups and has no effect on the backup chain.
+
