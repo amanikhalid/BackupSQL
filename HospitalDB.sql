@@ -19,3 +19,12 @@ CREATE TABLE Doctors (
     FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
 );
 
+-- Create Patients table
+CREATE TABLE Patients (
+    PatientID INT PRIMARY KEY IDENTITY(1,1),
+    FirstName NVARCHAR(50),
+    LastName NVARCHAR(50),
+    DateOfBirth DATE,
+    Gender NVARCHAR(10)
+);
+
