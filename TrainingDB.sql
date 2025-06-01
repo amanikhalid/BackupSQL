@@ -32,6 +32,9 @@ BACKUP DATABASE TrainingDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQ
 
 -- 4. Transaction Log Backup
 ALTER DATABASE TrainingDB SET RECOVERY FULL;
+BACKUP LOG TrainingDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak';
+
+
 
 
 
