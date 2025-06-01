@@ -24,3 +24,6 @@ INSERT INTO Students VALUES
 -- 1. Full Backup
 BACKUP DATABASE TrainingDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak';
 
+-- 2. Insert New Record
+INSERT INTO Students VALUES (3, 'Fatma Said', '2024-01-10');
+
