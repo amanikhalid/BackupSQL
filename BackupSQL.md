@@ -145,3 +145,10 @@ FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Bac
 WITH RECOVERY; 
     
 ```
+#### Step 3: Verify the Restored Data
+```sql
+
+USE TrainingDB; 
+SELECT * FROM Students; 
+```
+
