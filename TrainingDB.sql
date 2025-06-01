@@ -37,6 +37,20 @@ BACKUP LOG TrainingDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.M
 -- 5. Copy-Only Backup
 BACKUP DATABASE TrainingDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_CopyOnly.bak' WITH COPY_ONLY;
 
+---------------------------------------------
+
+-- Part 3: Real-World Scenario Simulation 
+BACKUP DATABASE HospitalDB TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\HospitalDB_Full.bak';
+
+-- FULL BACKUP - Run Every Sunday at 12:00 AM
+BACKUP DATABASE HospitalDB
+TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\HospitalDB_Full_20250525_0000.bak'
+WITH FORMAT, INIT, NAME = 'Full Backup of HospitalDB';
+
+
+
+
+
 
 
 
