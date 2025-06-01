@@ -40,4 +40,11 @@ CREATE TABLE Appointments (
 );
 
 
+-- Insert sample data into Departments
+INSERT INTO Departments (DepartmentName)
+VALUES 
+('Cardiology'),
+('Neurology'),
+('Pediatrics'),
+('Orthopedics');
 
