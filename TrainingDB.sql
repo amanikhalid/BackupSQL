@@ -58,6 +58,13 @@ TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backu
 WITH INIT, NAME = 'Transaction Log Backup of HospitalDB';
 
 
+-----------------------------
+
+-- Follow-Up Task: Restore the Database from Your Backup Files
+
+--Step 1: Drop the Current Database (Simulate System Failure)
+DROP DATABASE TrainingDB;
+
 
 
 
