@@ -52,6 +52,14 @@ BACKUP DATABASE HospitalDB
 TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\HospitalDB_Diff_20250529_0000.bak'
 WITH DIFFERENTIAL, INIT, NAME = 'Differential Backup of HospitalDB';
 
+-- TRANSACTION LOG BACKUP - Run Every Hour
+BACKUP LOG HospitalDB
+TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\HospitalDB_Log_20250529_1300.trn'
+WITH INIT, NAME = 'Transaction Log Backup of HospitalDB';
+
+
+
+
 
 
 
