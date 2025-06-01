@@ -151,4 +151,4 @@ WITH RECOVERY;
 USE TrainingDB; 
 SELECT * FROM Students; 
 ```
-
+![VerifyRestoredData Output](./image/VerifyRestoredData.png)
