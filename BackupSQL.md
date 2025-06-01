@@ -167,3 +167,10 @@ Only data up to the complete backup would be recoverable.  Unless reapplied in a
 
 #### 3. What happens if you use WITH RECOVERY in the middle of a restore chain?
 It stops applying additional backups (such as diff or log) and terminates the restoration process. After that, you would have to start over from the complete backup.
+
+#### 4. Which backup types are optional and which are mandatory for full recovery?
+- Complete backup and all transaction log backups are required (in FULL recovery model).
+
+- Differential backup, which reduces recovery time, is optional.
+
+- Copy-Only: Not required; used for ad hoc backups.
