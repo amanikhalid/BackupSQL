@@ -152,3 +152,11 @@ USE TrainingDB;
 SELECT * FROM Students; 
 ```
 ![VerifyRestoredData Output](./image/VerifyRestoredData.png)
+
+
+-------------------
+
+### Reflection Questions: 
+#### 1. What would happen if you skipped the differential backup step? 
+Only data up to the complete backup would be recoverable.  Unless reapplied in another way, any changes recorded by the differential backup would be lost.
+
