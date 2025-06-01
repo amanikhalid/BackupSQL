@@ -47,6 +47,11 @@ BACKUP DATABASE HospitalDB
 TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\HospitalDB_Full_20250525_0000.bak'
 WITH FORMAT, INIT, NAME = 'Full Backup of HospitalDB';
 
+-- DIFFERENTIAL BACKUP - Run Monday to Saturday at 12:00 AM
+BACKUP DATABASE HospitalDB
+TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\HospitalDB_Diff_20250529_0000.bak'
+WITH DIFFERENTIAL, INIT, NAME = 'Differential Backup of HospitalDB';
+
 
 
 
