@@ -122,4 +122,14 @@
 DROP DATABASE TrainingDB;
 
 ```
+##### Step 2: Restore from Your Backups Use the same file names and paths you used earlier. Replace them accordingly.
+
+#### 1. Restore FULL backup
+ ```sql
+RESTORE DATABASE TrainingDB  
+FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak' 
+WITH NORECOVERY; 
+```
+
+
 
