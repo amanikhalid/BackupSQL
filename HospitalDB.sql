@@ -56,3 +56,11 @@ VALUES
 ('Muna', 'Al-Lawati', 3),
 ('Hassan', 'Al-Balushi', 4);
 
+-- Insert sample data into Patients
+INSERT INTO Patients (FirstName, LastName, DateOfBirth, Gender)
+VALUES
+('Ahmed', 'Al-Hinai', '1982-04-12', 'Male'),
+('Fatma', 'Al-Zadjali', '1993-08-23', 'Female'),
+('Layla', 'Al-Kalbani', '2005-10-17', 'Female'),
+('Yusuf', 'Al-Nabhani', '1978-02-03', 'Male');
+
