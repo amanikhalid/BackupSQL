@@ -65,6 +65,12 @@ WITH INIT, NAME = 'Transaction Log Backup of HospitalDB';
 --Step 1: Drop the Current Database (Simulate System Failure)
 DROP DATABASE TrainingDB;
 
+--1. Restore FULL backup
+RESTORE DATABASE TrainingDB  
+FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\TrainingDB_Full.bak' 
+WITH NORECOVERY; 
+
+
 
 
 
