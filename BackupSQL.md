@@ -116,5 +116,10 @@
  **A university database with distinct filegroups for departments and faculties is an example of a real-world scenario.**
 
  -------------
- 
+ ## Follow-Up Task: Restore the Database from Your Backup Files
+ #### Step 1: Drop the Current Database (Simulate System Failure)
+ ```sql
+DROP DATABASE TrainingDB;
+
+```
 
