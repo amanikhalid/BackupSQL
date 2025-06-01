@@ -31,6 +31,7 @@
 
  **Real-World Scenario: To protect all customer transaction data, a banking system performs a complete backup every Sunday night.**
 
+ -------------
 
  **2.Differential Backup:**
 
@@ -50,6 +51,7 @@
 
  **Real-World Scenario: Following the first weekly complete backup, an e-learning platform backs up student progress and course content updates every night.**
 
+ ----------------
 
  **3. Transaction Log Backup**
 
@@ -71,6 +73,8 @@
 
  **A ticketing system that records each booking and transaction almost instantly is an example of a real-world scenario.**
 
+ -----------------------
+
  **4.Copy-Only Backup** 
  
  Ad hoc backups that don't interfere with the backup sequence are known as copy-only backups.
@@ -88,6 +92,8 @@
  - Not suitable as a foundation for log or differential backups.
 
  **Real-World Scenario: Make a backup before implementing a significant update to the hospital management system.**
+
+ ---------------
 
  **5.File/Filegroup Backup**
  
@@ -108,3 +114,7 @@
  - calls for thorough recovery procedures.
 
  **A university database with distinct filegroups for departments and faculties is an example of a real-world scenario.**
+
+ -------------
+ 
+
