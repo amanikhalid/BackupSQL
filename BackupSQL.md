@@ -165,3 +165,5 @@ Only data up to the complete backup would be recoverable.  Unless reapplied in a
 
 - Copy-Only Backup cannot be used as a foundation for differential or log backups and has no effect on the backup chain.
 
+#### 3. What happens if you use WITH RECOVERY in the middle of a restore chain?
+It stops applying additional backups (such as diff or log) and terminates the restoration process. After that, you would have to start over from the complete backup.
